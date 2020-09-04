@@ -1,0 +1,8 @@
+- name: Create Azure VM
+  hosts: client
+  connection: local
+  tasks:
+  - name: Create resource group
+    azure_rm_resourcegroup:
+      name: Moneyheist
+      location: eastus
